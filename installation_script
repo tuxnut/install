@@ -57,7 +57,7 @@ fi
 
 # Installing main packages with common name for both distro
 echo && echo "======> Installing main packages"
-$cmd_install 'autoconf automake baobab cmatrix curl gimp git gnome-system-monitor gnome-themes-standard gparted guake meld mpv neofetch network-manager numix-icon-theme-circle pkg-config plank python-pip pwgen sassc tree wireshark zsh'
+$cmd_install 'autoconf automake baobab cmatrix curl gimp git gnome-system-monitor gnome-themes-standard gparted guake meld mpv neofetch network-manager numix-icon-theme-circle password-gorilla pkg-config plank python-pip pwgen sassc tree wireshark zsh'
 
 # Installing packages with different name
 if [ "$p_m" != "apt" ];then
