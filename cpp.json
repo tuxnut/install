@@ -1,0 +1,146 @@
+{
+	/*
+		// Place your snippets for C++ here. Each snippet is defined under a snippet name and has a prefix, body and 
+		// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+		// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+		// same ids are connected.
+		// Example:
+		"Print to console": {
+			"prefix": "log",
+			"body": [
+				"console.log('$1');",
+				"$2"
+			],
+			"description": "Log output to console"
+		}
+		"name": {
+			"prefix": "",
+			"body": [
+	
+			],
+			"description": ""
+		},
+	
+	*/
+		"for loop": {
+			"prefix": "for",
+			"body": [
+				"for(size_t ${1:i} = 0; ${1:i} < ${2:length}; ${1:i}++) {",
+				"\t$0",
+				"}"
+			],
+			"description": "basic 'for' loop"
+		},
+		"for loop auto c++11": {
+			"prefix": "for auto",
+			"body": [
+				"for(auto ${1:&} value: ${2:vec}) {",
+				"\t$0",
+				"}"
+			],
+			"description": "basic 'for' loop"
+		},
+		"do-while loop": {
+			"prefix": "do",
+			"body": [
+				"do {",
+				"\t$0",
+				"} while($1);"
+			],
+			"description": "basic 'do-while' loop"
+		},
+		"if condition": {
+			"prefix": "if",
+			"body": [
+				"if($1) {", 
+				"\t$0",
+				"}"
+			],
+			"description": "basic 'if' condition"
+		},
+		"stream cout": {
+			"prefix": "cout",
+			"body": [
+				"std::cout << $1 << std::endl;"
+			],
+			"description": "basic 'std::cout' console log"
+		},
+		"vector": {
+			"prefix": "vector",
+			"body": [
+				"std::vector<${1:int}> $0"
+			],
+			"description": "basic 'std::vector'"
+		},
+		"while loop": {
+			"prefix": "while",
+			"body": [
+				"while($1) {", 
+				"\t$0",
+				"}"
+			],
+			"description": "basic 'while' loop"
+		},
+		"string": {
+			"prefix": "string",
+			"body": [
+				"std::string $0"
+			],
+			"description": "basic 'std::string'"
+		},
+		"main": {
+			"prefix": "main",
+			"body": [
+				"int main(int argc, char **argv) {", 
+				"\t$0",
+				"\treturn 0;",
+				"}"
+			],
+			"description": "basic 'main'"
+		},
+		"main-exec-time" : {
+			"prefix": "main",
+			"body": [
+				"int main(int argc, char **argv) {",
+				"\tauto start = std::chrono::high_resolution_clock::now();",
+				"\t$0",
+				"\tauto finish = std::chrono::high_resolution_clock::now();",
+				"\tstd::chrono::duration<double> elapsed = finish - start;",
+				"\tstd::cout << \"Execution time: \" << elapsed.count() << std::endl;",
+				"\treturn 0;",
+				"}"
+			],
+			"description": "'main' with exec time - #include <chrono>"
+		},
+		"printf": {
+			"prefix": "print",
+			"body": [
+				"printf(\"$1\", );"	
+			],
+			"description": "basic c 'printf'"
+		},
+		"cpt": {
+			"prefix": "cpt",
+			"body": "size_t cpt = 0;",
+			"description": "compteur init a 0"
+		},
+		"stack": {
+			"prefix": "stack",
+			"body": [
+				"std::stack<${1:int}> $0"
+			],
+			"description": "basic 'std::stack'"
+		},
+		"pair": {
+			"prefix": "pair",
+			"body": [
+				"std::pair<${1:std::string}, ${2:int}> $0"
+			],
+			"description": "basic 'std::pair', key-value"
+		},
+		"cout debug": {
+			"prefix": "coutline",
+			"body": "std::cout << ${1:__LINE__} << std::endl;",
+			"description": "cout with __LINE__ to debug"
+		}
+	}

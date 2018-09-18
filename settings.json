@@ -1,0 +1,7 @@
+{
+    "workbench.startupEditor": "none",
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorCustomizations": {
+        "statusBar.noFolderBackground": "#333333"
+    }
+}
